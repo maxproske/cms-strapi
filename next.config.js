@@ -1,5 +1,5 @@
 module.exports = {
     images: {
-        domains: ['gentle-temple-67213.herokuapp.com'],
+        domains: [process.env.IMAGES_DOMAIN],
     },
 }
