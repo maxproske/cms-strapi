@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import Image from 'next/image'
 
 export default function CoverImage({ title, url, slug }) {
   const imageUrl = `${
@@ -9,11 +10,11 @@ export default function CoverImage({ title, url, slug }) {
       {slug ? (
         <Link as={`/posts/${slug}`} href="/posts/[slug]">
           <a aria-label={title}>
-            <img src={imageUrl} alt={title} />
+            <Image src={imageUrl} alt={title} width={5304} height={7952} />
           </a>
         </Link>
       ) : (
-        <img src={imageUrl} alt={title} />
+        <Image src={imageUrl} alt={title} width={5304} height={7952} />
       )}
     </div>
   )
